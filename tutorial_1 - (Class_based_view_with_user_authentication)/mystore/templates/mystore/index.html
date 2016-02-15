@@ -1,0 +1,11 @@
+{% if store_list %}
+	<ul>
+		{% for store in store_list %}
+			<li>
+				<a href="/mystore/{{store.id}}/">{{store.store_name}}</a>
+			</li>
+		{% endfor%}
+	</ul>
+{% else %}
+	<p> No Stores are available.</p>
+{% endif %}
